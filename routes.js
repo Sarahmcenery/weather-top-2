@@ -13,3 +13,4 @@ router.get("/index", aboutController.index);
 router.get("/station/:id", stationController.index);
 
 router.post("/dashboard/addstation", dashboardController.addStation);
+router.post("/station/:id/addreading", stationController.addReading);
