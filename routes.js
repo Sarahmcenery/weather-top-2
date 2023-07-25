@@ -15,3 +15,4 @@ router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
 
 router.post("/dashboard/addstation", dashboardController.addStation);
 router.post("/station/:id/addreading", stationController.addReading);
+router.get("/station/:stationid/deletereading/:readingid", stationController.deleteReading);

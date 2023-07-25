@@ -16,37 +16,21 @@
       "stationid": "fcff8abe-b1c9-4ad8-9981-ecc6f703346c"
     },
     {
-      "title": "Cork",
-      "temperature": "15",
+      "code": "700",
+      "temperature": "22",
+      "windSpeed": 3.5,
+      "windDirection": 2,
       "pressure": 250,
-      "_id": "f678b4b1-6d62-468d-9f81-e27401ca0b33",
+      "_id": "9a1a2be1-de51-4b55-957d-9c08ebf009e4",
       "stationid": "77d6cf43-fc26-48ff-98c4-6e2f4e0c1b2b"
     },
     {
       "code": "340",
-      "temperature": "4",
-      "windSpeed": 3.5,
-      "windDirection": 2,
-      "pressure": 5000,
-      "_id": "f45439ad-f940-4b52-96c9-80f973331fb1",
-      "stationid": "77d6cf43-fc26-48ff-98c4-6e2f4e0c1b2b"
-    },
-    {
-      "code": "700",
       "temperature": "10",
-      "windSpeed": 4.5,
-      "windDirection": 100,
-      "pressure": 1000,
-      "_id": "5056ae0d-a061-47ac-9f56-0e2ae4df4eb2",
-      "stationid": "7e7eae79-f771-4fff-98a2-a25c3e7147a6"
-    },
-    {
-      "code": "600",
-      "temperature": "25",
-      "windSpeed": 23.5,
-      "windDirection": 200,
-      "pressure": 1000,
-      "_id": "0173fd87-02a2-4870-998e-f4a1aceca4ef",
+      "windSpeed": 5,
+      "windDirection": 6,
+      "pressure": 5000,
+      "_id": "cff34b77-639f-4760-986f-4172bd1c9f5b",
       "stationid": "77d6cf43-fc26-48ff-98c4-6e2f4e0c1b2b"
     }
   ]
