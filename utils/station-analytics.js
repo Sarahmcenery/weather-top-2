@@ -50,4 +50,41 @@ export const stationAnalytics = {
     }
     return maximumPressure;
   },
+
+  getLastCode(station) {
+    let lastCode = null;
+    if (station.readings.length > 0) {
+      lastCode = station.readings[station.readings.length - 1].code;
+    }
+
+    return lastCode;
+  },
+
+  getLastTemperature(station) {
+    let lastTemperature = null;
+    if (station.readings.length > 0) {
+      lastTemperature =
+        station.readings[station.readings.length - 1].temperature;
+    }
+
+    return lastTemperature;
+  },
+
+  getLastWindSpeed(station) {
+    let LastWindSpeed = null;
+    if (station.readings.length > 0) {
+      LastWindSpeed = station.readings[station.readings.length - 1].windSpeed;
+    }
+
+    return LastWindSpeed;
+  },
+
+  getLastPressure(station) {
+    let lastPressure = null;
+    if (station.readings.length > 0) {
+      lastPressure = station.readings[station.readings.length - 1].pressure;
+    }
+
+    return lastPressure;
+  },
 };

@@ -5,17 +5,25 @@ import { stationAnalytics } from "../utils/station-analytics.js";
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
-
     const minimumTemperature = stationAnalytics.getMinimumTemperature(station);
     const maximumTemperature = stationAnalytics.getMaximumTemperature(station);
     const minimumPressure = stationAnalytics.getMinimumPressure(station);
     const maximumPressure = stationAnalytics.getMaximumPressure(station);
     const temperature = await readingStore.getReadingById(request.params.id);
     const readings = await readingStore.getReadingById(request.params.id);
+    const lastCode = stationAnalytics.getLastCode(station);
+    const lastTemperature = stationAnalytics.getLastTemperature(station);
+    const lastPressure = stationAnalytics.getLastPressure(station);
+    const lastWindSpeed = stationAnalytics.getLastWindSpeed(station);
 
     const viewData = {
       title: "Station",
       station: station,
+      weather: "Code",
+      lastCode: lastCode,
+      lastTemperature: lastTemperature,
+      lastPressure: lastPressure,
+      lastWindSpeed: lastWindSpeed,
       minimumTemperature: minimumTemperature,
       maximumTemperature: maximumTemperature,
       minimumPressure: minimumPressure,

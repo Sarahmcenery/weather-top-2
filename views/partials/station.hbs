@@ -13,6 +13,9 @@
     <div class="tile is-parent">
       <article class="tile is-child box has-background-black has-text-white">
         Weather
+        <br />
+        <br />
+        {{lastCode}}
       </article>
     </div>
     <div class="tile is-parent">
@@ -20,15 +23,26 @@
         Temp
         <br />
         <br />
+        {{lastTemperature}}°C
+        <br />
+        <br />
         Min:
         {{minimumTemperature.temperature}}°C
-        <br />Max:
+        <br />
+        Max:
         {{maximumTemperature.temperature}}°C
+
       </article>
     </div>
     <div class="tile is-parent">
       <article class="tile is-child box has-background-black has-text-white">
         Wind
+        <br />
+        <br />
+        {{lastWindSpeed}}
+        km/h
+        <br />
+        <br />
         {{station.kmToBeaufort}}
       </article>
     </div>
@@ -37,12 +51,15 @@
         Pressure
         <br />
         <br />
+        {{lastPressure}}
+        hpa
+        <br />
+        <br />
         Min:
         {{minimumPressure.pressure}}
         <br />
         Max:
         {{maximumPressure.pressure}}
-        {{lastPressure}}
       </article>
     </div>
   </div>

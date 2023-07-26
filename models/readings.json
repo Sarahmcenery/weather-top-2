@@ -524,14 +524,74 @@
       "stationid": "54545500-ae2b-4a2e-9f84-3172f670a23e"
     },
     {
+      "code": "400",
+      "temperature": 100,
+      "windSpeed": 100,
+      "windDirection": 4,
+      "pressure": 99,
+      "kmToBeaufort": 100,
+      "_id": "67f180fa-b35a-4234-addd-c24fca34f21f",
+      "stationid": "1a41f9e8-9482-4eaa-8f94-e9ad5d552415"
+    },
+    {
+      "code": "100",
+      "temperature": 1,
+      "windSpeed": 1,
+      "windDirection": 1,
+      "pressure": 1,
+      "kmToBeaufort": 1,
+      "_id": "17a74ae9-e00e-448e-a20e-c33a435ddacf",
+      "stationid": "1a41f9e8-9482-4eaa-8f94-e9ad5d552415"
+    },
+    {
       "code": "500",
-      "temperature": 88,
-      "windSpeed": 35,
-      "windDirection": 88,
-      "pressure": 5000,
-      "kmToBeaufort": 35,
-      "_id": "51d7989a-3198-4c56-9d0e-5c660848ad78",
+      "temperature": 10,
+      "windSpeed": 50,
+      "windDirection": 56,
+      "pressure": 1000,
+      "kmToBeaufort": 50,
+      "_id": "b7a55e73-3576-4906-938e-68565a30c524",
       "stationid": "54545500-ae2b-4a2e-9f84-3172f670a23e"
+    },
+    {
+      "code": "600",
+      "temperature": 45,
+      "windSpeed": 45,
+      "windDirection": 110,
+      "pressure": 45,
+      "kmToBeaufort": 45,
+      "_id": "56f4aba3-6d1b-4e5d-b9f1-ae0f7054d179",
+      "stationid": "1a41f9e8-9482-4eaa-8f94-e9ad5d552415"
+    },
+    {
+      "code": "400",
+      "temperature": 21,
+      "windSpeed": 78,
+      "windDirection": 77,
+      "pressure": 99,
+      "kmToBeaufort": 78,
+      "_id": "5c85ba32-d668-486b-a976-d76fa31497ca",
+      "stationid": "54545500-ae2b-4a2e-9f84-3172f670a23e"
+    },
+    {
+      "code": "800",
+      "temperature": 10,
+      "windSpeed": 125,
+      "windDirection": 8,
+      "pressure": 49,
+      "kmToBeaufort": 125,
+      "_id": "79cd7d87-e6c3-45f0-8439-0b30391d754f",
+      "stationid": "1a41f9e8-9482-4eaa-8f94-e9ad5d552415"
+    },
+    {
+      "code": "500",
+      "temperature": 4,
+      "windSpeed": 3.5,
+      "windDirection": 78,
+      "pressure": 250,
+      "kmToBeaufort": 3.5,
+      "_id": "3ca12183-c595-4f35-9a64-46cfdf84dd5c",
+      "stationid": "1a41f9e8-9482-4eaa-8f94-e9ad5d552415"
     }
   ]
 }
