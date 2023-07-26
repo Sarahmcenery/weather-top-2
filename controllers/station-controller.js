@@ -15,6 +15,7 @@ export const stationController = {
     const lastTemperature = stationAnalytics.getLastTemperature(station);
     const lastPressure = stationAnalytics.getLastPressure(station);
     const lastWindSpeed = stationAnalytics.getLastWindSpeed(station);
+    const celsiusToFahrenheit = stationAnalytics.getCelsiusToFahrenheit(station);
 
     const viewData = {
       title: "Station",
@@ -31,6 +32,7 @@ export const stationController = {
       temp: "Temperature",
       temperature: temperature,
       readings: readings,
+      celsiusToFahrenheit: celsiusToFahrenheit,
     };
     response.render("station-view", viewData);
   },

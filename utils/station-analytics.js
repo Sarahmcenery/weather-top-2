@@ -87,4 +87,14 @@ export const stationAnalytics = {
 
     return lastPressure;
   },
+
+  getCelsiusToFahrenheit(station, temperature, lastTemperature) {
+    let celsiusToFahrenheit = null;
+    if (station.readings.length > 0) {
+      lastTemperature =
+        station.readings[station.readings.length - 1].temperature;
+    }
+    celsiusToFahrenheit = (lastTemperature * 9) / 5 + 32;
+    return celsiusToFahrenheit;
+  },
 };
