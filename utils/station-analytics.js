@@ -88,6 +88,16 @@ export const stationAnalytics = {
     return lastPressure;
   },
 
+  getLastWindDirection(station) {
+    let lastWindDirection = null;
+    if (station.readings.length > 0) {
+      lastWindDirection =
+        station.readings[station.readings.length - 1].windDirection;
+    }
+
+    return lastWindDirection;
+  },
+
   getCelsiusToFahrenheit(station, temperature, lastTemperature) {
     let celsiusToFahrenheit = null;
     if (station.readings.length > 0) {
@@ -96,5 +106,134 @@ export const stationAnalytics = {
     }
     celsiusToFahrenheit = (lastTemperature * 9) / 5 + 32;
     return celsiusToFahrenheit;
+  },
+
+  getConvertWind(
+    station,
+    windSpeed,
+    temperature,
+    lastTemperature,
+    latestWind,
+    latestTemp
+  ) {
+    let convertWind = null;
+    if (station.readings.length > 0) {
+      latestWind = station.readings[station.readings.length - 1].windSpeed;
+    }
+    if (station.readings.length > 0) {
+      latestTemp = station.readings[station.readings.length - 1].temperature;
+    }
+    convertWind =
+      13.12 +
+      0.6215 * latestTemp -
+      11.37 * Math.pow(latestWind, 0.16) +
+      0.3965 * (latestTemp * Math.pow(latestWind, 0.16));
+    return convertWind.toFixed(2);
+  },
+
+  getWindDirectionToCompass(station, lastWindDirection) {
+    let windDirectionToCompass = null;
+    if (station.readings.length > 0) {
+      lastWindDirection =
+        station.readings[station.readings.length - 1].windDirection;
+
+      if (lastWindDirection < 11.25) {
+        return "North";
+      } else if (lastWindDirection >= 11.25 && lastWindDirection < 33.75) {
+        return "North North East";
+      } else if (lastWindDirection >= 33.75 && lastWindDirection < 56.25) {
+        return "North East";
+      } else if (lastWindDirection >= 56.25 && lastWindDirection < 78.75) {
+        return "East North East";
+      } else if (lastWindDirection >= 78.75 && lastWindDirection < 101.25) {
+        return "East";
+      } else if (lastWindDirection >= 101.25 && lastWindDirection < 123.75) {
+        return "East South East";
+      } else if (lastWindDirection >= 123.75 && lastWindDirection < 146.25) {
+        return "South East";
+      } else if (lastWindDirection >= 146.25 && lastWindDirection < 168.75) {
+        return "South South East";
+      } else if (lastWindDirection >= 168.75 && lastWindDirection < 191.25) {
+        return "South";
+      } else if (lastWindDirection >= 191.25 && lastWindDirection < 213.75) {
+        return "South South West";
+      } else if (lastWindDirection >= 213.75 && lastWindDirection < 236.25) {
+        return "South West";
+      } else if (lastWindDirection >= 236.25 && lastWindDirection < 258.75) {
+        return "West South West";
+      } else if (lastWindDirection >= 258.75 && lastWindDirection < 281.25) {
+        return "West";
+      } else if (lastWindDirection >= 281.25 && lastWindDirection < 303.75) {
+        return "West North West";
+      } else if (lastWindDirection >= 303.75 && lastWindDirection < 326.25) {
+        return "North West";
+      } else if (lastWindDirection >= 326.25 && lastWindDirection < 348.75) {
+        return "North North West";
+      }
+    }
+  },
+
+  getKmToBeaufort(station, lastWindDirection) {
+    let kmToBeaufort = null;
+    if (station.readings.length > 0) {
+      if (station.readings[station.readings.length - 1].windSpeed == 1) {
+        return "0";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 1 &&
+        station.readings[station.readings.length - 1].windSpeed <= 5
+      ) {
+        return "1";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 6 &&
+        station.readings[station.readings.length - 1].windSpeed <= 11
+      ) {
+        return "2";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 12 &&
+        station.readings[station.readings.length - 1].windSpeed <= 19
+      ) {
+        return "3";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 20 &&
+        station.readings[station.readings.length - 1].windSpeed <= 28
+      ) {
+        return "4";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 29 &&
+        station.readings[station.readings.length - 1].windSpeed <= 38
+      ) {
+        return "5";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 39 &&
+        station.readings[station.readings.length - 1].windSpeed <= 49
+      ) {
+        return "6";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 50 &&
+        station.readings[station.readings.length - 1].windSpeed <= 61
+      ) {
+        return "7";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 62 &&
+        station.readings[station.readings.length - 1].windSpeed <= 74
+      ) {
+        return "8";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 75 &&
+        station.readings[station.readings.length - 1].windSpeed <= 88
+      ) {
+        return "9";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 89 &&
+        station.readings[station.readings.length - 1].windSpeed <= 102
+      ) {
+        return "10";
+      } else if (
+        station.readings[station.readings.length - 1].windSpeed >= 103 &&
+        station.readings[station.readings.length - 1].windSpeed <= 117
+      ) {
+        return "11";
+      }
+    }
   },
 };

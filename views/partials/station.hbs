@@ -1,67 +1,87 @@
 <div class="content box">
-  <h1 class="title">
+  <h1 class="title is-1">
     {{station.title}}
   </h1>
   <div class="block">
   </div>
   <div class="tile is-ancestor">
     <div class="tile is-parent">
-      <article class="tile is-child box has-background-black has-text-white">
+      <article
+        class="tile is-child box has-background-black has-text-white is-size-3"
+      >
         {{station.title}}
       </article>
     </div>
     <div class="tile is-parent">
-      <article class="tile is-child box has-background-black has-text-white">
+      <article
+        class="tile is-child box has-background-black has-text-white is-size-3"
+      >
         Weather
         <br />
         <br />
-        {{lastCode}}
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box has-background-black has-text-white">
-        Temp
-        <br />
-        <br />
-        {{lastTemperature}}°C
-        <br />
-        {{celsiusToFahrenheit}}°F
-        <br />
-        <br />
-        Min:
-        {{minimumTemperature.temperature}}°C
-        <br />
-        Max:
-        {{maximumTemperature.temperature}}°C
+        <em>{{lastCode}}</em>
+        {{station.lastCode}}
 
       </article>
     </div>
     <div class="tile is-parent">
-      <article class="tile is-child box has-background-black has-text-white">
-        Wind
+      <article
+        class="tile is-child box has-background-black has-text-white is-size-3"
+      >
+        Temp
         <br />
         <br />
-        {{lastWindSpeed}}
-        km/h
+        <em> {{lastTemperature}}°C</em>
+        <br />
+        <em> {{celsiusToFahrenheit}}°F</em>
         <br />
         <br />
-        {{station.kmToBeaufort}}
+        <em>
+          Min:
+          {{minimumTemperature.temperature}}°C</em>
+        <br />
+        <em>Max:
+          {{maximumTemperature.temperature}}°C</em>
+
       </article>
     </div>
     <div class="tile is-parent">
-      <article class="tile is-child box has-background-black has-text-white">
+      <article
+        class="tile is-child box has-background-black has-text-white is-size-3"
+      >
+        Wind
+        <br />
+        <br />
+        <em>{{lastWindSpeed}} km/h</em>
+        <br />
+        <br />
+        <em>{{kmToBeaufort}} Bft</em>
+        <br />
+        <br />
+        <em>{{windDirectionToCompass}}</em>
+        <br />
+        <br />
+        <em>Feels like {{convertWind}} °C</em>
+
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article
+        class="tile is-child box has-background-black has-text-white is-size-3"
+      >
         Pressure
         <br />
         <br />
-        {{lastPressure}}
-        hpa
+        <em>{{lastPressure}} hpa</em>
         <br />
         <br />
-        Min:
-        {{minimumPressure.pressure}}
+        <em>
+          Min:
+          {{minimumPressure.pressure}}</em>
         <br />
-        Max:
-        {{maximumPressure.pressure}}
+        <em>
+          Max:
+          {{maximumPressure.pressure}}</em>
       </article>
     </div>
   </div>

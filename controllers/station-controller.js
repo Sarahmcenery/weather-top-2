@@ -16,6 +16,11 @@ export const stationController = {
     const lastPressure = stationAnalytics.getLastPressure(station);
     const lastWindSpeed = stationAnalytics.getLastWindSpeed(station);
     const celsiusToFahrenheit = stationAnalytics.getCelsiusToFahrenheit(station);
+    const codeToText = stationAnalytics.getLastCode(station); 
+    const kmToBeaufort = stationAnalytics.getKmToBeaufort(station);
+    const convertWind = stationAnalytics.getConvertWind(station);
+    const lastWindDirection = stationAnalytics.getLastWindDirection(station);
+    const windDirectionToCompass = stationAnalytics.getWindDirectionToCompass(station);
 
     const viewData = {
       title: "Station",
@@ -33,6 +38,12 @@ export const stationController = {
       temperature: temperature,
       readings: readings,
       celsiusToFahrenheit: celsiusToFahrenheit,
+      codeToText: codeToText,
+      kmToBeaufort: kmToBeaufort,
+      convertWind: convertWind,
+      latestWind: lastWindSpeed,
+      lastWindDirection: lastWindDirection,
+      windDirectionToCompass: windDirectionToCompass,
     };
     response.render("station-view", viewData);
   },
