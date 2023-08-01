@@ -1,0 +1,41 @@
+{{> welcome-menu active="login"}}
+
+<section class="content box">
+    <div class="columns">
+        <div class="column is-half">
+            <form action="/authenticate" method="POST">
+                <h3 class="subtitle">Log-in</h3>
+              
+                  <div class="field">
+                    <label class="label">Email</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type = "email" placeholder="Email" name="email" required>
+                          <div class="icon is-small is-left">
+                             <div class="icon is-small is-left">
+                                {{> icons/envelope}}
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <div class="field">
+                    <label class="label">Password</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password" name="password" required>
+                          <div class="icon is-small is-left">
+                            {{> icons/lock}}
+                          </div>
+                      </div>
+                  </div>
+              
+                <button class="button is-dark is-medium is-rounded">Login</button>
+            </form>
+        </div>
+      
+        <div class="column is-half">
+            <figure class="image is-square">
+               <img src="https://cdn.glitch.global/94c9d674-fe0d-4f74-b357-97247460aa87/weather-icons5.jpg?v=1690914365948">
+            </figure>
+      </div>
+   </div>
+</section>

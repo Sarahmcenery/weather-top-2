@@ -1,1 +1,33 @@
-{"file":"./models/users.json","users":[]}
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Sarah",
+      "lastName": "Mc Enery",
+      "email": "sarahmcenery@gmail.com",
+      "password": "password",
+      "_id": "1ea3963b-9424-4c6a-9604-9d788fac0822"
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Mc Enery",
+      "email": "sarahmcenery@gmail.com",
+      "password": "password",
+      "_id": "8a8538f3-cbaa-4c97-85b2-4eb99868f28b"
+    },
+    {
+      "firstName": "Bandi ",
+      "lastName": "O'Dea",
+      "email": "bandiodea@gmail.com",
+      "password": "dean",
+      "_id": "9adf081c-f47c-4dce-b494-bfcc22c0ceda"
+    },
+    {
+      "firstName": "Bandi ",
+      "lastName": "O'Dea",
+      "email": "bandiodea@gmail.com",
+      "password": "dean",
+      "_id": "de790f0e-32a8-4734-8233-49af39f80baf"
+    }
+  ]
+}

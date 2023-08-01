@@ -662,6 +662,16 @@
       "kmToBeaufort": 25,
       "_id": "9ce06886-26cc-4a6c-b351-1fd00e83c965",
       "stationid": "54545500-ae2b-4a2e-9f84-3172f670a23e"
+    },
+    {
+      "code": "300",
+      "temperature": 16,
+      "windSpeed": 34,
+      "windDirection": 199,
+      "pressure": 234,
+      "kmToBeaufort": 34,
+      "_id": "6dc09861-4cb8-45b9-b250-f6cd569a764e",
+      "stationid": "2ce5a2b9-488a-4576-be7a-c7101dca5e53"
     }
   ]
 }
