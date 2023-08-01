@@ -9,6 +9,8 @@ export const stationController = {
     const maximumTemperature = stationAnalytics.getMaximumTemperature(station);
     const minimumPressure = stationAnalytics.getMinimumPressure(station);
     const maximumPressure = stationAnalytics.getMaximumPressure(station);
+    const minimumWindSpeed = stationAnalytics.getMinimumWindSpeed(station);
+    const maximumWindSpeed = stationAnalytics.getMaximumWindSpeed(station);
     const temperature = await readingStore.getReadingById(request.params.id);
     const readings = await readingStore.getReadingById(request.params.id);
     const lastCode = stationAnalytics.getLastCode(station);
@@ -34,6 +36,8 @@ export const stationController = {
       maximumTemperature: maximumTemperature,
       minimumPressure: minimumPressure,
       maximumPressure: maximumPressure,
+      minimumWindSpeed: minimumWindSpeed,
+      maximumWindSpeed: maximumWindSpeed,
       temp: "Temperature",
       temperature: temperature,
       readings: readings,

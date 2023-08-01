@@ -50,6 +50,32 @@ export const stationAnalytics = {
     }
     return maximumPressure;
   },
+  
+  getMinimumWindSpeed(station) {
+    let minimumWindSpeed = null;
+    if (station.readings.length > 0) {
+      minimumWindSpeed = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].windSpeed < minimumWindSpeed.windSpeed) {
+          minimumWindSpeed = station.readings[i];
+        }
+      }
+    }
+    return minimumWindSpeed;
+  },
+
+  getMaximumWindSpeed(station) {
+    let maximumwindSpeed = null;
+    if (station.readings.length > 0) {
+      maximumwindSpeed = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].windSpeed > maximumwindSpeed.windSpeed) {
+          maximumwindSpeed = station.readings[i];
+        }
+      }
+    }
+    return maximumwindSpeed;
+  },
 
   getLastCode(station) {
     let lastCode = null;
