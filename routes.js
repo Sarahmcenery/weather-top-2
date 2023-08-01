@@ -4,6 +4,8 @@ import { dashboardController } from "./controllers/dashboard-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 import { stationController } from "./controllers/station-controller.js";
 export const router = express.Router();
+//const accounts = require('./controllers/accounts.js');
+
 
 router.get("/", indexController.index);
 router.get("/dashboard", dashboardController.index);

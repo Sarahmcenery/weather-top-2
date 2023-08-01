@@ -12,6 +12,18 @@
     {
       "title": "Limerick",
       "_id": "4c2387de-3645-49c0-b2df-c7756bfc046b"
+    },
+    {
+      "title": "Kerry",
+      "latitude": 52.12,
+      "longitude": 67.9,
+      "_id": "a08428e8-ecaf-46d2-b220-da4be3f5dcbc"
+    },
+    {
+      "title": "Sligo",
+      "latitude": 123.45,
+      "longitude": 567.89,
+      "_id": "5b58504f-daec-460c-afaa-cdc6a4bf39fb"
     }
   ]
 }

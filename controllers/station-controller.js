@@ -5,6 +5,8 @@ import { stationAnalytics } from "../utils/station-analytics.js";
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    const latitude = await stationStore.getStationById(request.params.id);
+    const longitude = await stationStore.getStationById(request.params.id);
     const minimumTemperature = stationAnalytics.getMinimumTemperature(station);
     const maximumTemperature = stationAnalytics.getMaximumTemperature(station);
     const minimumPressure = stationAnalytics.getMinimumPressure(station);
@@ -40,6 +42,8 @@ export const stationController = {
       maximumWindSpeed: maximumWindSpeed,
       temp: "Temperature",
       temperature: temperature,
+      latitude: latitude,
+      longitude: longitude,
       readings: readings,
       celsiusToFahrenheit: celsiusToFahrenheit,
       codeToText: codeToText,
