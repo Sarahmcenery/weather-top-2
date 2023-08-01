@@ -236,4 +236,27 @@ export const stationAnalytics = {
       }
     }
   },
+
+  getCodeToText(station, code, lastCode) {
+    let codeToText = null;
+    if (station.readings.length > 0) {
+      if (station.readings[station.readings.length - 1].code == 100) {
+        return "Clear";
+      } else if (station.readings[station.readings.length - 1].code == 200) {
+        return "Partial Clouds";
+      } else if (station.readings[station.readings.length - 1].code == 300) {
+        return "Cloudy";
+      } else if (station.readings[station.readings.length - 1].code == 400) {
+        return "Light Showers";
+      } else if (station.readings[station.readings.length - 1].code == 500) {
+        return "Heavy Showers";
+      } else if (station.readings[station.readings.length - 1].code == 600) {
+        return "Rain";
+      } else if (station.readings[station.readings.length - 1].code == 700) {
+        return "Snow";
+      } else if (station.readings[station.readings.length - 1].code == 800) {
+        return "Thunder";
+      }
+    }
+  },
 };

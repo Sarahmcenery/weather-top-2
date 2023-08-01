@@ -7,48 +7,43 @@
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <article
-        class="tile is-child box has-background-black has-text-white is-size-3"
-      >
+        class="tile is-child box has-background-black has-text-white is-size-3">
         {{station.title}}
       </article>
     </div>
     <div class="tile is-parent">
       <article
-        class="tile is-child box has-background-black has-text-white is-size-3"
-      >
+        class="tile is-child box has-background-black has-text-white is-size-3">
         Weather
         <br />
         <br />
         <em>{{lastCode}}</em>
-        {{station.lastCode}}
-
+        <br />
+        <br />
+        <em>{{codeToText}}</em>
       </article>
     </div>
     <div class="tile is-parent">
       <article
-        class="tile is-child box has-background-black has-text-white is-size-3"
-      >
+        class="tile is-child box has-background-black has-text-white is-size-3">
         Temp
         <br />
         <br />
-        <em> {{lastTemperature}}°C</em>
+        <em> {{lastTemperature}} °C</em>
         <br />
-        <em> {{celsiusToFahrenheit}}°F</em>
+        <em> {{celsiusToFahrenheit}} °F</em>
         <br />
         <br />
-        <em>
-          Min:
-          {{minimumTemperature.temperature}}°C</em>
+        <em>Min:
+          {{minimumTemperature.temperature}} °C</em>
         <br />
         <em>Max:
-          {{maximumTemperature.temperature}}°C</em>
-
+          {{maximumTemperature.temperature}} °C</em>
       </article>
     </div>
     <div class="tile is-parent">
       <article
-        class="tile is-child box has-background-black has-text-white is-size-3"
-      >
+        class="tile is-child box has-background-black has-text-white is-size-3">
         Wind
         <br />
         <br />
@@ -62,25 +57,21 @@
         <br />
         <br />
         <em>Feels like {{convertWind}} °C</em>
-
       </article>
     </div>
     <div class="tile is-parent">
       <article
-        class="tile is-child box has-background-black has-text-white is-size-3"
-      >
+        class="tile is-child box has-background-black has-text-white is-size-3">
         Pressure
         <br />
         <br />
         <em>{{lastPressure}} hpa</em>
         <br />
         <br />
-        <em>
-          Min:
+        <em>Min:
           {{minimumPressure.pressure}}</em>
         <br />
-        <em>
-          Max:
+        <em>Max:
           {{maximumPressure.pressure}}</em>
       </article>
     </div>
