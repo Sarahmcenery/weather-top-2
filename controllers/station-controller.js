@@ -25,6 +25,7 @@ export const stationController = {
     const convertWind = stationAnalytics.getConvertWind(station);
     const lastWindDirection = stationAnalytics.getLastWindDirection(station);
     const windDirectionToCompass = stationAnalytics.getWindDirectionToCompass(station);
+  
 
     const viewData = {
       title: "Station",
@@ -51,7 +52,8 @@ export const stationController = {
       convertWind: convertWind,
       latestWind: lastWindSpeed,
       lastWindDirection: lastWindDirection,
-      windDirectionToCompass: windDirectionToCompass,
+      windDirectionToCompass: windDirectionToCompass
+    
     };
     response.render("station-view", viewData);
   },

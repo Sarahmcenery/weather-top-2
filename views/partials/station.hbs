@@ -6,90 +6,100 @@
     <div class="tile is-parent">
       <article
         class="tile is-child box has-background-black has-text-white is-size-3">
-        {{station.title}} 
-        {{> icons/location}}      
-        <br />
-        <br />
-        <em>Lat: {{station.latitude}}</em>
-        <br/>
-        <em>Lng: {{station.longitude}}</em>    
+          {{station.title}} 
+            {{> icons/location}}      
+            <br />
+            <br />
+              <em>Lat: {{station.latitude}}</em>
+            <br/>
+              <em>Lng: {{station.longitude}}</em>    
       </article>
     </div>
+    
     <div class="tile is-parent">
       <article
         class="tile is-child box has-background-black has-text-white is-size-3">
-        Weather
-         <span class="icon is-large">
-         {{> icons/cloud}}
-        </span>
-        <br />
-        <br />
-        <em>{{codeToText}}</em>
+          Weather
+           <span class="icon is-large">
+             {{> icons/cloud}}
+          </span>
+            <br />
+            <br />
+              <em>{{codeToText}}</em>     
       </article>
     </div>
+    
+    <div class="tile is-parent">
+      <article
+          class="tile is-child box has-background-black has-text-white is-size-3">
+            Temp
+             <span class="icon is-large">
+              {{> icons/thermometer}}
+             </span>
+                <br />
+                <br />        
+                 {{#if station.readings}}
+                    <em> {{lastTemperature}} °C</em>
+                <br />
+                    <em> {{celsiusToFahrenheit}} °F</em>
+                <br />
+                <br />
+                    <em>Min:
+                    {{minimumTemperature.temperature}} °C</em>
+                <br />
+                    <em>Max:
+                    {{maximumTemperature.temperature}} °C</em>    
+                {{/if}}      
+      </article>      
+    </div>
+    
+    <div class="tile is-parent">
+      <article
+          class="tile is-child box has-background-black has-text-white is-size-3">
+            Wind
+             <span class="icon is-large">
+                {{> icons/wind}}
+             </span>
+                <br />
+                <br />
+                 {{#if station.readings}}
+                    <em>{{kmToBeaufort}} Bft</em>
+                 <br />
+                 <br />
+                    <em>{{windDirectionToCompass}}</em>
+                <br />
+                <br />
+                    <em>Feels like {{convertWind}} °C</em>
+                <br />
+                <br />
+                    <em>Min:
+                    {{minimumWindSpeed.windSpeed}}</em>
+                <br />
+                    <em>Max:
+                    {{maximumWindSpeed.windSpeed}}</em>
+                {{/if}}
+        </article>
+    </div>
+    
     <div class="tile is-parent">
       <article
         class="tile is-child box has-background-black has-text-white is-size-3">
-        Temp
-         <span class="icon is-large">
-        {{> icons/thermometer}}
-        </span>
-        <br />
-        <br />
-        <em> {{lastTemperature}} °C</em>
-        <br />
-        <em> {{celsiusToFahrenheit}} °F</em>
-        <br />
-        <br />
-        <em>Min:
-          {{minimumTemperature.temperature}} °C</em>
-        <br />
-        <em>Max:
-          {{maximumTemperature.temperature}} °C</em>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article
-        class="tile is-child box has-background-black has-text-white is-size-3">
-        Wind
-         <span class="icon is-large">
-        {{> icons/wind}}
-        </span>
-        <br />
-        <br />
-        <em>{{kmToBeaufort}} Bft</em>
-        <br />
-        <br />
-        <em>{{windDirectionToCompass}}</em>
-        <br />
-        <br />
-        <em>Feels like {{convertWind}} °C</em>
-        <br />
-        <br />
-        <em>Min:
-          {{minimumWindSpeed.windSpeed}}</em>
-        <br />
-        <em>Max:
-          {{maximumWindSpeed.windSpeed}}</em>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article
-        class="tile is-child box has-background-black has-text-white is-size-3">
-        Pressure
-         <span class="icon is-large">
-        {{> icons/pressure}}
-        </span>
-        <br />
-        <br />
-        <em>{{lastPressure}} hpa</em>
-        <br />
-        <br />
-        <em>Min:
-          {{minimumPressure.pressure}}</em>
-        <br />
-        <em>Max:
-          {{maximumPressure.pressure}}</em>
+          Pressure
+           <span class="icon is-large">
+              {{> icons/pressure}}
+          </span>
+            <br />
+            <br />
+              {{#if station.readings}}
+                <em>{{lastPressure}} hpa</em>
+            <br />
+            <br />
+              <em>Min:
+              {{minimumPressure.pressure}}</em>
+            <br />
+              <em>Max:
+              {{maximumPressure.pressure}}</em>
+             {{/if}}
       </article>
     </div>
   </div>

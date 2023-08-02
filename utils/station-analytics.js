@@ -60,8 +60,11 @@ export const stationAnalytics = {
           minimumWindSpeed = station.readings[i];
         }
       }
+    return minimumWindSpeed
+    
+    } else { 
+      return "Invalid Reading";
     }
-    return minimumWindSpeed;
   },
 
   getMaximumWindSpeed(station) {
@@ -269,7 +272,7 @@ export const stationAnalytics = {
       if (station.readings[station.readings.length - 1].code == 100) {
         return "Clear";
       } else if (station.readings[station.readings.length - 1].code == 200) {
-        return "Partial Clouds";
+        return "Partial Clouds"; 
       } else if (station.readings[station.readings.length - 1].code == 300) {
         return "Cloudy";
       } else if (station.readings[station.readings.length - 1].code == 400) {
@@ -285,4 +288,6 @@ export const stationAnalytics = {
       }
     }
   },
+  
+ 
 };

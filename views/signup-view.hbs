@@ -8,9 +8,14 @@
                   <div class="field is-horizontal field-body">
                     <div class="field">
                         <label class="label">First Name</label>
-                          <p class="control is-expanded">
-                            <input class="input" type="text" placeholder="First Name" name="firstname" required>
-                          </p>
+                          <div class="control has-icons-left">
+                             <p class="control is-expanded">
+                                <input class="input" type="text" placeholder="First Name" name="firstname" required>
+                                   <div class="icon is-small is-left">
+                                     {{> icons/person}}
+                                  </div>
+                            </p>
+                          </div>
                     </div>
                     
                     <div class="field">
@@ -24,7 +29,7 @@
                   <div class="field">
                     <label class="label">Email</label>
                       <div class="control has-icons-left">
-                        <input class="input" type = "email" placeholder="Email" name="email" required>
+                        <input class="input" type = "email" placeholder="Email" name="email"required>
                           <div class="icon is-small is-left">
                            {{> icons/envelope}}
                           </div>
@@ -40,6 +45,25 @@
                           </div>
                       </div>
                 </div>
+              
+               <div class="field">
+                    <label class="label">Repeat Password</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type="password" name="repeatPassword" required>
+                          <div class="icon is-small is-left">
+                            {{> icons/lock}}
+                          </div>
+                      </div>
+                </div>
+                             
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" required>
+                    I agree to the <a href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
               
                 <button class="button is-dark is-medium is-rounded">Submit</button>
             </form>

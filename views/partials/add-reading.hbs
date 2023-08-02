@@ -30,7 +30,7 @@
           placeholder="00.0C"
           type="double"
           step="any"
-          name="temperature"
+          name="temperature" required
         />
         <div class="icon is-small is-left">
           {{>icons/thermometer}}
@@ -41,11 +41,11 @@
       <label class="label">Wind Speed</label>
       <div class="control has-icons-left">
         <input
-          class="input"
+          class="input" 
           placeholder="00.00kmh"
           type="double"
           step="any"
-          name="windSpeed"
+          name="windSpeed" required
         />
         <div class="icon is-small is-left">
             {{>icons/wind}}
@@ -60,7 +60,7 @@
           placeholder="000deg"
           type="double"
           step="any"
-          name="windDirection"
+          name="windDirection" required
         />
            <div class="icon is-small is-left">
           {{>icons/direction}}
@@ -75,7 +75,7 @@
           placeholder="000hPa"
           type="double"
           step="any"
-          name="pressure"
+          name="pressure" required
         />
          <div class="icon is-small is-left">
            {{>icons/pressure}}

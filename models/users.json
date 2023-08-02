@@ -28,6 +28,111 @@
       "email": "bandiodea@gmail.com",
       "password": "dean",
       "_id": "de790f0e-32a8-4734-8233-49af39f80baf"
+    },
+    {
+      "firstname": "Dean",
+      "lastname": "The Olde Bear",
+      "email": "bandiodea@gmail.com",
+      "password": "bandi",
+      "_id": "bd8ffb73-a565-4e0e-a688-05863c8e4ecc"
+    },
+    {
+      "firstname": "Dean",
+      "lastname": "The Olde Bear",
+      "email": "bandiodea@gmail.com",
+      "password": "weather",
+      "_id": "f2898739-d933-4b24-81ec-c32ef16aec9e"
+    },
+    {
+      "firstname": "Andy",
+      "lastname": "Rex",
+      "email": "andyrex@mail.com",
+      "password": "christmas",
+      "_id": "13394244-ada7-4606-81f4-0534a12a466b"
+    },
+    {
+      "firstname": "Sarah",
+      "lastname": "Mc",
+      "email": "sarahmc@mymail.com",
+      "password": "wellington",
+      "_id": "543aba04-ef06-4b90-9026-b9ec1900b5ec"
+    },
+    {
+      "firstname": "Sarah",
+      "lastname": "Rex",
+      "email": "sr@mail.com",
+      "password": "laptop",
+      "repeat password": "computer",
+      "_id": "a66c2dd2-47f1-4355-9bd7-1a2b6a8752da"
+    },
+    {
+      "firstname": "me",
+      "lastname": "myself",
+      "email": "memyself@gmail.com",
+      "password": "mememe",
+      "repeat password": "memenotme",
+      "_id": "6df5c379-ccf9-41d7-ac3d-91e3197a28d3"
+    },
+    {
+      "firstname": "me",
+      "lastname": "myself",
+      "email": "memyself@gmail.com",
+      "password": "mememe",
+      "repeat password": "mememe",
+      "_id": "71bfdb58-65f3-4530-a507-ffaa7b754a9e"
+    },
+    {
+      "firstname": "me",
+      "lastname": "myself",
+      "email": "memyself@gmail.com",
+      "password": "mememe",
+      "_id": "a964e42f-1393-407c-9ded-5ef47bfd82ae"
+    },
+    {
+      "firstname": "Sarah",
+      "lastname": "Mc Enery",
+      "email": "sarahmcenery@gmail.com",
+      "password": "password",
+      "_id": "b0ae367b-4328-43c3-b26e-573ac2de52ac"
+    },
+    {
+      "firstname": "me",
+      "lastname": "myself",
+      "email": "memyself@gmail.com",
+      "password": "mememe",
+      "_id": "ab58c283-9406-4e1c-80fb-2b3c94c121be"
+    },
+    {
+      "firstname": "you",
+      "lastname": "yourself",
+      "email": "you@gmail.com",
+      "password": "youyouyou",
+      "repeatPassword": "you",
+      "_id": "a15ff819-4e40-4371-9ca4-e05c803177ee"
+    },
+    {
+      "firstname": "you",
+      "lastname": "yourself",
+      "email": "you@gmail.com",
+      "password": "youyouyou",
+      "repeatPassword": "you",
+      "_id": "6fd99b16-aa5e-4697-91a2-d81f27288954"
+    },
+    {
+      "firstname": "you",
+      "lastname": "yourself",
+      "email": "you@gmail.com",
+      "password": "youyouyou",
+      "repeatPassword": "you",
+      "_id": "0d9ea904-b26f-4e91-aa34-46c501734684"
+    },
+    {
+      "firstname": "Dean",
+      "lastname": "Mc",
+      "email": "deanmc@mail.com",
+      "password": "rain",
+      "repeatPassword": "rain",
+      "_id": "b7e923f0-1737-4d3e-bc27-84c4f0844a98"
     }
   ]
 }

@@ -672,6 +672,86 @@
       "kmToBeaufort": 34,
       "_id": "6dc09861-4cb8-45b9-b250-f6cd569a764e",
       "stationid": "2ce5a2b9-488a-4576-be7a-c7101dca5e53"
+    },
+    {
+      "code": "500",
+      "temperature": 4,
+      "windSpeed": 45,
+      "windDirection": 236,
+      "pressure": 500,
+      "kmToBeaufort": 45,
+      "_id": "c6416f72-ba1f-4161-83e1-0a301c1f1734",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "800",
+      "temperature": 1,
+      "windSpeed": 56,
+      "windDirection": 348,
+      "pressure": 250,
+      "kmToBeaufort": 56,
+      "_id": "9e59b228-ec94-42cf-883e-f1b20067e87c",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "100",
+      "temperature": 9,
+      "windSpeed": 140,
+      "windDirection": 170,
+      "pressure": 8,
+      "kmToBeaufort": 140,
+      "_id": "f30569e2-c574-47f4-a0bc-cfa956a5b118",
+      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
+    },
+    {
+      "code": "100",
+      "temperature": 10,
+      "windSpeed": 117,
+      "windDirection": 147,
+      "pressure": 10,
+      "kmToBeaufort": 117,
+      "_id": "f94592c4-296e-4237-8ab7-f098c8d6c647",
+      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
+    },
+    {
+      "code": "600",
+      "temperature": 30,
+      "windSpeed": 0,
+      "windDirection": 70,
+      "pressure": 11,
+      "kmToBeaufort": 0,
+      "_id": "4ca1626f-7601-487f-803c-fad7393fab1b",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "400",
+      "temperature": 22,
+      "windSpeed": 0,
+      "windDirection": 70,
+      "pressure": 11,
+      "kmToBeaufort": 0,
+      "_id": "c11bab41-3cbb-4d1e-9b11-9a6fba40ebae",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "400",
+      "temperature": 22,
+      "windSpeed": 45,
+      "windDirection": 56,
+      "pressure": 1000,
+      "kmToBeaufort": 45,
+      "_id": "dff83e3c-fa89-4db5-925d-78082029f1b6",
+      "stationid": "9715f9f3-fad3-44d2-9cb5-0d91163e810d"
+    },
+    {
+      "code": "200",
+      "temperature": 12,
+      "windSpeed": 17,
+      "windDirection": 120,
+      "pressure": 12,
+      "kmToBeaufort": 17,
+      "_id": "543e2929-a88e-4709-844a-207665617e77",
+      "stationid": "c6f3445b-5e51-4a21-a2b7-3a3637afe5aa"
     }
   ]
 }
