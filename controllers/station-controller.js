@@ -25,6 +25,7 @@ export const stationController = {
     const convertWind = stationAnalytics.getConvertWind(station);
     const lastWindDirection = stationAnalytics.getLastWindDirection(station);
     const windDirectionToCompass = stationAnalytics.getWindDirectionToCompass(station);
+   
   
 
     const viewData = {
@@ -52,7 +53,7 @@ export const stationController = {
       convertWind: convertWind,
       latestWind: lastWindSpeed,
       lastWindDirection: lastWindDirection,
-      windDirectionToCompass: windDirectionToCompass
+      windDirectionToCompass: windDirectionToCompass,
     
     };
     response.render("station-view", viewData);
@@ -77,7 +78,7 @@ export const stationController = {
     const stationId = request.params.stationid;
     const readingId = request.params.readingid;
     console.log(`Deleting Reading ${readingId} from Station ${stationId}`);
-    await readingStore.deleteReading(request.params.readingId);
+    await readingStore.deleteReading(readingId);
     response.redirect("/station/" + stationId);
   },
 };

@@ -1,5 +1,5 @@
 {
-  "name": "glitch-template",
+  "name": "weather-top-2",
   "version": "0.0.1",
   "description": "Starter project for simplified Express application",
   "main": "server.js",

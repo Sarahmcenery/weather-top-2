@@ -1,13 +1,16 @@
+<header class="title is-2 has-text-grey-dark has-background-grey-light">     
+</header>
+
 {{#each stations}}
   <div class="box box-link-hover-shadow">
-    <h2 class="title">
-      {{title}}
-    </h2>
+    <h2 class="title">     
+      {{title}}     
+    </h2>   
       <a href="/station/{{_id}}" class="button">
         {{> icons/open}}
       </a> 
      <a href="/dashboard/deletestation/{{_id}}" class="button">
-    {{>icons/delete}}
+    {{>icons/delete2}}
   </a>
   </div>
 {{/each}}

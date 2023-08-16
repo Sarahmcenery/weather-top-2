@@ -287,7 +287,6 @@ export const stationAnalytics = {
         return "Thunder";
       }
     }
-  },
-  
- 
+  },  
 };
+

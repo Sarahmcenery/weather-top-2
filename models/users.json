@@ -133,6 +133,70 @@
       "password": "rain",
       "repeatPassword": "rain",
       "_id": "b7e923f0-1737-4d3e-bc27-84c4f0844a98"
+    },
+    {
+      "firstname": "homer",
+      "lastname": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "repeatPassword": "secret",
+      "_id": "ba3c166e-dc75-4759-8ff1-28a89d54906f"
+    },
+    {
+      "firstname": "marge",
+      "lastname": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "repeatPassword": "secret",
+      "_id": "9f882436-2749-4f41-bcd0-b36471c7c7a9"
+    },
+    {
+      "firstname": "bart",
+      "lastname": "simpson",
+      "email": "bartsimpon@mail.com",
+      "password": "santaslittlehelper",
+      "repeatPassword": "santaslittlehelper",
+      "_id": "7b499cd1-780a-4223-ab2d-c09c540394d0"
+    },
+    {
+      "firstname": "lisa",
+      "lastname": "simpson",
+      "email": "lisa@simpson.com",
+      "password": "springfield",
+      "repeatPassword": "springfield",
+      "_id": "84fc585f-05db-4ed6-8c25-ebf30022b476"
+    },
+    {
+      "firstname": "lisa",
+      "lastname": "simpson",
+      "email": "lisa@simpson.com",
+      "password": "springfield",
+      "repeatPassword": "springfield",
+      "_id": "b5597341-0401-463f-9ef9-2c2a3f3ada99"
+    },
+    {
+      "firstname": "Sarah",
+      "lastname": "Mc",
+      "email": "sarahmcenery@gmail.com",
+      "password": "password",
+      "repeatPassword": "password",
+      "_id": "3613de1b-9143-4b2f-bb83-2c37f737ddd1"
+    },
+    {
+      "firstname": "Sarah",
+      "lastname": "Mc",
+      "email": "sarahmcenery@gmail.com",
+      "password": "password",
+      "repeatPassword": "password",
+      "_id": "9618ecce-ea09-40e7-8062-e97fd659175b"
+    },
+    {
+      "firstname": "maggie",
+      "lastname": "simpson",
+      "email": "maggie@simpson.com",
+      "password": "yellow",
+      "repeatPassword": "yellow",
+      "_id": "eccd1201-25cc-40bc-93fe-bc6279972981"
     }
   ]
 }

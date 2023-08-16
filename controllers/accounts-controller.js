@@ -26,15 +26,15 @@ export const accountsController = {
     };
     response.render("signup-view", viewData);
   },
- 
-   async register(request, response) {
+
+  async register(request, response) {
     const user = request.body;
     await userStore.addUser(user);
     console.log(`registering ${user.email}`);
     response.redirect("/");
   },
-  
-    async authenticate(request, response) {
+
+   async authenticate(request, response, password) {
     const user = await userStore.getUserByEmail(request.body.email);
     if (user) {
       response.cookie("station", user.email);
@@ -42,12 +42,12 @@ export const accountsController = {
       response.redirect("/dashboard");
     } else {
       response.redirect("/login");
+      console.log(`incorrect username or password`);
     }
   },
-
+   
   async getLoggedInUser(request) {
     const userEmail = request.cookies.station;
     return await userStore.getUserByEmail(userEmail);
-  },
-   
+  }, 
 };
