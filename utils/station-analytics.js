@@ -266,7 +266,7 @@ export const stationAnalytics = {
     }
   },
 
-  getCodeToText(station, code, lastCode) {
+    getCodeToText(station, code, lastCode) {
     let codeToText = null;
     if (station.readings.length > 0) {
       if (station.readings[station.readings.length - 1].code == 100) {
@@ -288,5 +288,9 @@ export const stationAnalytics = {
       }
     }
   },  
+   
+  getCurrentDate(){
+   let currentDate = new Date()
+  }
 };
 

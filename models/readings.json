@@ -674,26 +674,6 @@
       "stationid": "2ce5a2b9-488a-4576-be7a-c7101dca5e53"
     },
     {
-      "code": "800",
-      "temperature": 1,
-      "windSpeed": 56,
-      "windDirection": 348,
-      "pressure": 250,
-      "kmToBeaufort": 56,
-      "_id": "9e59b228-ec94-42cf-883e-f1b20067e87c",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "100",
-      "temperature": 10,
-      "windSpeed": 117,
-      "windDirection": 147,
-      "pressure": 10,
-      "kmToBeaufort": 117,
-      "_id": "f94592c4-296e-4237-8ab7-f098c8d6c647",
-      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
-    },
-    {
       "code": "400",
       "temperature": 22,
       "windSpeed": 45,
@@ -725,66 +705,6 @@
     },
     {
       "code": "200",
-      "temperature": 30,
-      "windSpeed": 9,
-      "windDirection": 8,
-      "pressure": 9,
-      "kmToBeaufort": 9,
-      "_id": "f4f0d51f-55d8-48bb-8eb8-e38c0485ee69",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "100",
-      "temperature": 5,
-      "windSpeed": 6,
-      "windDirection": 78,
-      "pressure": 77,
-      "kmToBeaufort": 6,
-      "_id": "46c15b37-bc5e-4cf4-a2a7-a87dc1474d42",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "800",
-      "temperature": 4,
-      "windSpeed": 5,
-      "windDirection": 6,
-      "pressure": 7,
-      "kmToBeaufort": 5,
-      "_id": "fed673eb-62f9-4797-aa30-f21190a29cec",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "100",
-      "temperature": 4,
-      "windSpeed": 5,
-      "windDirection": 7,
-      "pressure": 7,
-      "kmToBeaufort": 5,
-      "_id": "e46dd3ab-8b64-40c9-bb19-9ee944c4ae27",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "200",
-      "temperature": 4,
-      "windSpeed": 5,
-      "windDirection": 7,
-      "pressure": 8,
-      "kmToBeaufort": 5,
-      "_id": "13ece152-8a5c-4100-b8bb-14ddc2fe2435",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "700",
-      "temperature": 2,
-      "windSpeed": 5,
-      "windDirection": 6,
-      "pressure": 77,
-      "kmToBeaufort": 5,
-      "_id": "5d8a8a8d-8ff5-46f9-a876-f556877c446d",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
-      "code": "200",
       "temperature": 5,
       "windSpeed": 50,
       "windDirection": 56,
@@ -792,6 +712,116 @@
       "kmToBeaufort": 50,
       "_id": "9fff6122-7208-4c24-bfd2-75842a043c80",
       "stationid": "38a03ddb-fcef-4a10-a2c6-854cb7c693b7"
+    },
+    {
+      "code": "700",
+      "temperature": 33,
+      "windSpeed": 3,
+      "windDirection": 3,
+      "pressure": 3,
+      "kmToBeaufort": 3,
+      "_id": "47b82165-b947-406c-8661-2391c08ebaed",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "700",
+      "temperature": 5,
+      "windSpeed": 2,
+      "windDirection": 9,
+      "pressure": 2,
+      "kmToBeaufort": 2,
+      "_id": "c5c0bc23-d564-4e29-bcba-699348405d25",
+      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
+    },
+    {
+      "code": "500",
+      "temperature": 4,
+      "windSpeed": 3,
+      "windDirection": 2,
+      "pressure": 2,
+      "kmToBeaufort": 3,
+      "_id": "dcdf4d62-4af1-4750-a197-8457bb9482b8",
+      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
+    },
+    {
+      "code": "700",
+      "temperature": 5,
+      "windSpeed": 33,
+      "windDirection": 3,
+      "pressure": 3,
+      "kmToBeaufort": 33,
+      "_id": "82b04010-9d53-4b87-b546-8c24977a8e18",
+      "stationid": "3b42309e-bd9e-45f7-b205-9c7db999a27c"
+    },
+    {
+      "code": "300",
+      "temperature": 10,
+      "windSpeed": 44,
+      "windDirection": 55,
+      "pressure": 900,
+      "kmToBeaufort": 44,
+      "_id": "24475a0b-f071-4964-b65d-c5c2d6c41e9d",
+      "stationid": "6d99e979-d03f-4b64-8c64-03b4500e25c9"
+    },
+    {
+      "code": "800",
+      "temperature": 6,
+      "windSpeed": 23,
+      "windDirection": 4,
+      "pressure": 500,
+      "kmToBeaufort": 23,
+      "_id": "359fa440-7e34-4bfe-9fd9-23b3257ee1f8",
+      "stationid": "6d99e979-d03f-4b64-8c64-03b4500e25c9"
+    },
+    {
+      "code": "600",
+      "temperature": 3,
+      "windSpeed": 3,
+      "windDirection": 3,
+      "pressure": 3,
+      "kmToBeaufort": 3,
+      "_id": "04af73c6-4fe9-4914-a65c-cad3ce904cb8",
+      "stationid": "6d99e979-d03f-4b64-8c64-03b4500e25c9"
+    },
+    {
+      "code": "800",
+      "temperature": 4,
+      "windSpeed": 5,
+      "windDirection": 5,
+      "pressure": 5,
+      "kmToBeaufort": 5,
+      "_id": "04abb47e-0e3f-4aab-afd6-1256682f38d2",
+      "stationid": "6d99e979-d03f-4b64-8c64-03b4500e25c9"
+    },
+    {
+      "code": "800",
+      "temperature": 4,
+      "windSpeed": 22,
+      "windDirection": 3,
+      "pressure": 33,
+      "kmToBeaufort": 22,
+      "_id": "88904710-78d2-4b32-90b9-9956dcdc1772",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "100",
+      "temperature": 6,
+      "windSpeed": 3,
+      "windDirection": 3,
+      "pressure": 3,
+      "kmToBeaufort": 3,
+      "_id": "d1752c96-da4e-47d9-8388-fbc31db3ac2d",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "800",
+      "temperature": 5,
+      "windSpeed": 2,
+      "windDirection": 2,
+      "pressure": 2,
+      "kmToBeaufort": 2,
+      "_id": "702b1267-6b1e-4018-b9c5-72524ea6e1eb",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
     }
   ]
 }

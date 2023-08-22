@@ -9,7 +9,7 @@ export const readingStore = {
     return db.data.readings;
   },
 
-  async addReading(stationId, reading) {
+  async addReading(stationId, reading, currentDate) {
     await db.read();
     reading._id = v4();
     reading.stationid = stationId;
@@ -39,6 +39,5 @@ export const readingStore = {
     db.data.readings = [];
     await db.write();
   },
-
   
 };

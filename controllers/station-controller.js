@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { readingStore } from "../models/reading-store.js";
+import { userStore } from "../models/user-store.js";
 import { stationAnalytics } from "../utils/station-analytics.js";
 
 export const stationController = {
@@ -25,8 +26,7 @@ export const stationController = {
     const convertWind = stationAnalytics.getConvertWind(station);
     const lastWindDirection = stationAnalytics.getLastWindDirection(station);
     const windDirectionToCompass = stationAnalytics.getWindDirectionToCompass(station);
-   
-  
+    const password = await userStore.getUserById(request.params.id);
 
     const viewData = {
       title: "Station",
@@ -54,13 +54,14 @@ export const stationController = {
       latestWind: lastWindSpeed,
       lastWindDirection: lastWindDirection,
       windDirectionToCompass: windDirectionToCompass,
-    
+      password: password,
     };
     response.render("station-view", viewData);
   },
 
   async addReading(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    
     const newReading = {
       code: request.body.code,
       temperature: Number(request.body.temperature),
@@ -68,8 +69,11 @@ export const stationController = {
       windDirection: Number(request.body.windDirection),
       pressure: Number(request.body.pressure),
       kmToBeaufort: Number(request.body.windSpeed),
+      currentDate: request.body.currentDate,
     };
     console.log(`adding reading ${newReading.title}`);
+    const currentDate = new Date();
+     console.log(currentDate);
     await readingStore.addReading(station._id, newReading);
     response.redirect("/station/" + station._id);
   },
@@ -81,4 +85,5 @@ export const stationController = {
     await readingStore.deleteReading(readingId);
     response.redirect("/station/" + stationId);
   },
+
 };

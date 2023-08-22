@@ -1,5 +1,6 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
+import { stationStore } from "./station-store.js";
 
 const db = initStore("users");
 
@@ -27,6 +28,11 @@ export const userStore = {
     return db.data.users.find((user) => user.email === email);
   },
 
+   async getUserByFirstName(firstName) {
+    await db.read();
+    return db.data.users.find((user) => user.firstName === firstName);
+  },
+
   async deleteUserById(id) {
     await db.read();
     const index = db.data.users.findIndex((user) => user._id === id);
@@ -38,6 +44,5 @@ export const userStore = {
     db.data.users = [];
     await db.write();
      },
-  
-
+ 
 };

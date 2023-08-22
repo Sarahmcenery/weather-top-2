@@ -34,20 +34,21 @@ export const accountsController = {
     response.redirect("/");
   },
 
-   async authenticate(request, response, password) {
+  async authenticate(request, response) {
     const user = await userStore.getUserByEmail(request.body.email);
-    if (user) {
+    const password = request.body.password;
+    if (password === user.password) {
       response.cookie("station", user.email);
       console.log(`logging in ${user.email}`);
       response.redirect("/dashboard");
     } else {
       response.redirect("/login");
-      console.log(`incorrect username or password`);
+      console.log(`Authentication failed`);
     }
   },
-   
+
   async getLoggedInUser(request) {
     const userEmail = request.cookies.station;
     return await userStore.getUserByEmail(userEmail);
-  }, 
+  },
 };
