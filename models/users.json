@@ -205,6 +205,22 @@
       "password": "mary",
       "repeatPassword": "mary",
       "_id": "8cd21f73-d1dc-4362-b3aa-a80ace4cd978"
+    },
+    {
+      "firstname": "Aneta",
+      "lastname": "G",
+      "email": "anetag@mail.com",
+      "password": "Kevin",
+      "repeatPassword": "Kevin",
+      "_id": "1a472710-d3e5-4859-905f-da7d7949787b"
+    },
+    {
+      "firstname": "Katka",
+      "lastname": "p",
+      "email": "katkap@mail.com",
+      "password": "squirrel",
+      "repeatPassword": "squirrel",
+      "_id": "b9c87598-604f-47e1-9f16-1ab9f957a01c"
     }
   ]
 }
