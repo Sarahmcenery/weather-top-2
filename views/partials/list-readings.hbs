@@ -1,6 +1,6 @@
 <table class="table is-bordered is-fullwidth">
   <thead class="has-background-grey-light"> 
-    name  {{users.firstname}}
+    {{users.firstname}}
     {{users.loggedInUser.firstName}}
     <tr>
       <th>Date/Time</th>
@@ -15,9 +15,9 @@
   <tbody>
     {{#each station.readings}}
       <tr>
-        <td>
-          {{currentDate}}       
-        </td>
+         <td>
+        {{currentDate}}
+        </td> 
         <td>        
           {{code}}
         </td>
@@ -39,8 +39,6 @@
         </a>
         </td>
       </tr>
-    {{/each}}
-    
-    
+    {{/each}}    
   </tbody>
 </table>

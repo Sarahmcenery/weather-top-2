@@ -266,13 +266,14 @@ export const stationAnalytics = {
     }
   },
 
-    getCodeToText(station, code, lastCode) {
+    getCodeToText(station, code) {
     let codeToText = null;
+        let icon = null;
     if (station.readings.length > 0) {
       if (station.readings[station.readings.length - 1].code == 100) {
-        return "Clear";
+        return "Clear"; 
       } else if (station.readings[station.readings.length - 1].code == 200) {
-        return "Partial Clouds"; 
+        return "Partial Clouds";
       } else if (station.readings[station.readings.length - 1].code == 300) {
         return "Cloudy";
       } else if (station.readings[station.readings.length - 1].code == 400) {
@@ -287,10 +288,8 @@ export const stationAnalytics = {
         return "Thunder";
       }
     }
+      return [codeToText, icon];
   },  
    
-  getCurrentDate(){
-   let currentDate = new Date()
-  }
 };
 

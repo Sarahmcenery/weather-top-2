@@ -12,16 +12,6 @@
       "stationid": "9715f9f3-fad3-44d2-9cb5-0d91163e810d"
     },
     {
-      "code": "200",
-      "temperature": 33,
-      "windSpeed": 4,
-      "windDirection": 5,
-      "pressure": 5,
-      "kmToBeaufort": 4,
-      "_id": "480ae931-dcff-4150-9ecc-ad7e0790340b",
-      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
-    },
-    {
       "code": "800",
       "temperature": 5,
       "windSpeed": 66,
@@ -30,6 +20,91 @@
       "kmToBeaufort": 66,
       "_id": "6f0f1c67-7ce9-4b40-b22c-cc035f313446",
       "stationid": "509fb047-89d3-4e00-b2d9-9b0555320b90"
+    },
+    {
+      "code": "100",
+      "temperature": 6,
+      "windSpeed": 7,
+      "windDirection": 88,
+      "pressure": 9,
+      "kmToBeaufort": 7,
+      "_id": "62b0ef5f-7305-4892-bc29-e5d43b7e0a33",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "700",
+      "temperature": 3,
+      "windSpeed": 2,
+      "windDirection": 2,
+      "pressure": 2,
+      "kmToBeaufort": 2,
+      "_id": "6d81c651-4d0c-48ac-9d04-1d48533bd366",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "800",
+      "temperature": 11,
+      "windSpeed": 1,
+      "windDirection": 1,
+      "pressure": 1,
+      "kmToBeaufort": 1,
+      "_id": "a0324bea-f2bb-4b1a-9ff0-b8cb9e9a547c",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "400",
+      "temperature": 4,
+      "windSpeed": 4,
+      "windDirection": 4,
+      "pressure": 4,
+      "kmToBeaufort": 4,
+      "currentDate": "Wed, 23 Aug 2023 19:46:42 GMT",
+      "_id": "0782a21f-a70a-43ee-bb04-4b9d14a1f222",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "400",
+      "temperature": 4,
+      "windSpeed": 4,
+      "windDirection": 4,
+      "pressure": 4,
+      "kmToBeaufort": 4,
+      "currentDate": "Wed, 23 Aug 2023 19:50:26 GMT",
+      "_id": "c55b06d6-67a2-40bb-853d-3384fe25f597",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "700",
+      "temperature": 7,
+      "windSpeed": 7,
+      "windDirection": 7,
+      "pressure": 7,
+      "kmToBeaufort": 7,
+      "currentDate": "Wed, 23 Aug 2023 19:56:12 GMT",
+      "_id": "84222a86-58ec-4949-855c-e3a84854cdde",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "500",
+      "temperature": 5,
+      "windSpeed": 5,
+      "windDirection": 5,
+      "pressure": 5,
+      "kmToBeaufort": 5,
+      "currentDate": "Wed, Aug 23, 2023, 8:56:51 PM",
+      "_id": "3ebbef09-5f5e-4a52-9aab-5b491b9a079e",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
+    },
+    {
+      "code": "100",
+      "temperature": 11,
+      "windSpeed": 55,
+      "windDirection": 43,
+      "pressure": 100,
+      "kmToBeaufort": 55,
+      "currentDate": "Wed, Aug 23, 2023, 9:00:48 PM",
+      "_id": "f65f7604-56ae-4f97-bd57-0635814d638b",
+      "stationid": "a76874bb-e140-49f1-bd3f-7ecb50a2436f"
     }
   ]
 }
