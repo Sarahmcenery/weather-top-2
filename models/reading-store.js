@@ -39,5 +39,4 @@ export const readingStore = {
     db.data.readings = [];
     await db.write();
   },
-  
 };

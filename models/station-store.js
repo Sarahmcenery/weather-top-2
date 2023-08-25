@@ -24,8 +24,8 @@ export const stationStore = {
     list.readings = await readingStore.getReadingsByStationId(list._id);
     return list;
   },
-  
-   async getStationsByUserId(userid) {
+
+  async getStationsByUserId(userid) {
     await db.read();
     return db.data.stations.filter((station) => station.userid === userid);
   },

@@ -50,7 +50,7 @@ export const stationAnalytics = {
     }
     return maximumPressure;
   },
-  
+
   getMinimumWindSpeed(station) {
     let minimumWindSpeed = null;
     if (station.readings.length > 0) {
@@ -60,9 +60,8 @@ export const stationAnalytics = {
           minimumWindSpeed = station.readings[i];
         }
       }
-    return minimumWindSpeed
-    
-    } else { 
+      return minimumWindSpeed;
+    } else {
       return "Invalid Reading";
     }
   },
@@ -266,12 +265,11 @@ export const stationAnalytics = {
     }
   },
 
-    getCodeToText(station, code) {
+  getCodeToText(station, code) {
     let codeToText = null;
-        let icon = null;
     if (station.readings.length > 0) {
       if (station.readings[station.readings.length - 1].code == 100) {
-        return "Clear"; 
+        return "Clear";
       } else if (station.readings[station.readings.length - 1].code == 200) {
         return "Partial Clouds";
       } else if (station.readings[station.readings.length - 1].code == 300) {
@@ -288,8 +286,6 @@ export const stationAnalytics = {
         return "Thunder";
       }
     }
-      return [codeToText, icon];
-  },  
-   
+    return [codeToText];
+  },
 };
-

@@ -28,7 +28,7 @@ export const userStore = {
     return db.data.users.find((user) => user.email === email);
   },
 
-   async getUserByFirstName(firstName) {
+  async getUserByFirstName(firstName) {
     await db.read();
     return db.data.users.find((user) => user.firstName === firstName);
   },
@@ -43,6 +43,15 @@ export const userStore = {
   async deleteAll() {
     db.data.users = [];
     await db.write();
-     },
+  },
 
+  async update(userId, updatedUser) {
+    const user = await this.getUserById(userId);
+    user.firstname = updatedUser.firstname;
+    user.lastname = updatedUser.lastname;
+    user.email = updatedUser.email;
+    user.password = updatedUser.password;
+    db.data.users.push(user);
+    await db.write();
+  },
 };
